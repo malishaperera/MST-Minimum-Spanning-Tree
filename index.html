@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branch Network Visualization</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Branch Network Visualization</h1>
+    <form id="branchForm">
+        <input type="text" id="branchName" placeholder="New Branch Location" required>
+        <button type="submit" class="branches">Add Branch</button>
+    </form>
+    <div id="network"></div>
+    <table id="branchTable" border="1" style="width:50%; margin:auto; text-align:center;">
+        <thead>
+            <tr>
+                <th>Branch</th>
+                <th>Coordinates</th>
+                <th>Connected Branch</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Initial branch, Colombo, is manually added -->
+            <tr id="colomboRow">
+                <td>Colombo</td>
+                <td>(6.9271, 79.9612)</td>
+                <td>main-branch</td> <!-- Placeholder for Connected Branch -->
+            </tr>        
+        </tbody>
+    </table>
+    <script src="./main.js"></script>
+</body>
+</html>
